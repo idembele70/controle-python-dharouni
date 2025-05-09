@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tableau de Bord des Ventes 2025</title>
+  <style>
+    /* Reset basique */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f4f7fa;
+      color: #333;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      color: #222;
+    }
+    .links-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      width: 90%;
+      max-width: 800px;
+      margin-top: 1rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    footer {
+      margin-top: auto;
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tableau de Bord des Ventes 2025</h1>
+
+  <div class="links-container">
+    <a href="sales_january.html" class="card">
+      <h2>Ventes Janvier</h2>
+      <p>40 enregistrements — Produit, Quantité, Prix, etc.</p>
+    </a>
+    <a href="sales_february.html" class="card">
+      <h2>Ventes Février</h2>
+      <p>40 enregistrements — Statut détaillé des ventes.</p>
+    </a>
+    <a href="sales_march.html" class="card">
+      <h2>Ventes Mars</h2>
+      <p>40 enregistrements — Données enrichies par région et commercial.</p>
+    </a>
+  </div>
+
+  <footer>
+    Exercice Web Scraping & Data Viz · © 2025
+  </footer>
+
+</body>
+</html>
