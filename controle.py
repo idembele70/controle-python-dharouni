@@ -24,9 +24,10 @@ def fetch_sales(month_url:str) -> list[dict]:
     if len(cells) == len(headers):  # Ignore les lignes incomplètes
         rows.append(dict(zip(headers, cells)))
 
-  print(rows)
-  # print('Extracting data from table is done', len(rows), 'rows')
+  print('Extracting data from table is done for', month_url, len(rows), 'rows')
   return rows
 
 # print(fetch_sales('january'))
 fetch_sales('january')
+fetch_sales('february')
+fetch_sales('march')
